@@ -1,0 +1,233 @@
+@import "mixins";
+@import "variable";
+
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Open Sans', sans-serif;
+    
+}
+
+.bggray{
+    background-color: $graybg;
+}
+
+header{
+    background-color: #fff;
+
+    nav{
+        white-space: nowrap;
+
+        ul.navbar-nav{
+            margin-left: -1px;
+
+            li{
+                border-left: 1px solid #bfb8b8;
+
+                .nav-link{
+                    padding: 0rem 1rem;
+                    font-size: 0.9rem;
+                    font-family: sans-serif;
+
+                    &:hover{
+                        color: $primary_color !important;
+                    }
+                }
+
+                .active{
+                    color: $primary_color !important;
+                }
+
+            }
+        }
+
+        .awards .badge{
+            font-size: 0.9rem;
+            padding: 0rem;
+        }
+    }
+
+    .navbar-brand{
+        width: 6rem;
+
+        img{
+            width: 100%;
+        }
+    }
+}
+
+.section_heading{
+    font-size: 2rem;
+    color: #000;
+}
+
+.banner_section{
+    padding: 3rem;
+    border-bottom: 2px solid #bfb8b8;
+
+    article{
+        gap:2rem;
+
+        h2{
+            font-weight: bold;
+            font-size: 1.8rem;
+        }
+    }
+}
+
+
+.article_list{
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+
+    .article_columns{
+        padding: 1rem;
+        width: 31%;
+        margin: 0 auto;
+
+        h3{
+            text-align: center;
+            font-size: 1.2rem;
+            font-weight: bold;
+            padding-bottom: 1rem;
+            border-bottom: 2px groove $border_color;
+        }
+
+        .list-group-item{
+            background-color: $graybg;
+            border-bottom-width: 2px;
+
+            a{
+                text-decoration: none;
+                color: $lightdark;
+                
+            }
+            .side_thumb{
+                width: 40%;
+                margin-right: 1rem;
+            }
+
+            .article_title{
+                color:#000;
+                font-size: 1rem;
+                font-weight: bold;
+            }
+
+            &:last-child{
+                border-bottom-width: 0px;
+            }
+            
+        }
+    }
+} 
+
+.explore_btn{
+    width: 100%;
+    padding: 1rem 0;
+    border-radius: 0;
+    color: #000;
+    margin-top:1rem;
+    font-weight: bold;
+    background-color: $primary_color;
+}
+
+.whats_more{
+    padding-top: 3rem;
+    padding-bottom: 3rem;    
+}
+
+.circle_icon{
+    float: left;
+    margin-right: 1rem;
+}
+
+.call_to_action{
+    background-color: #d8f4f8;
+    padding: 2rem;
+
+    h3{
+        font-weight: bold;
+        font-size: 2.1rem;
+        margin-right: 1rem;
+        padding-top: 1rem;
+    }
+
+    .btn{
+        font-weight: bold;
+        font-size: 2rem;
+        width: 8rem;
+        border-radius: 3rem;
+        height: 4rem;
+        background-color: $primary_color;
+    }
+}
+
+footer{
+    background-color: $secondary_color;
+
+    .footer_heading{
+        color: #fff;
+        text-align: left;
+        text-transform: uppercase;
+        font-size: 1.2rem;
+        font-weight: bold;
+    }
+
+    .footer_small_heading{
+        color: $primary_color;
+    }
+}
+
+.footer_feature_img{
+    padding-left: 0px !important;
+}
+
+.footer_feature_img img{
+    height: 100%;
+}
+
+.social_media_icon{
+    border: 1px solid #fff;
+    border-radius: 50%;
+    height: 2rem;
+    width: 2rem;
+    text-align: center;
+    color: #fff;
+    padding-top: 0.2rem;
+
+    a{
+        color: #fff;
+
+    }
+}
+
+.copyright{
+    background-color: #cfd8dd;
+    padding: 1rem;
+    font-size: 0.9rem;
+}
+
+@media (max-width:425px) {
+    .article_list .article_columns{
+        width: 100%;
+    }
+    .nav-link{
+        padding:0.5rem !important;
+    }
+}
+
+.read_more_link{
+    color: #40afc1;
+    font-style: italic;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.read_more_link:hover{
+    color: #40afc1;
+    text-decoration: underline;
+}
